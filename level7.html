@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 7: Loops: stop repeating yourself</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <img class="logo" src="assets/python-logo.svg" alt="Python logo style icon">
+    <div>
+      <p class="kicker">Python Builder Ladder</p>
+      <h1>Level 7: Loops: stop repeating yourself</h1>
+      <p>for loops · lists · iteration</p>
+    </div>
+  </div>
+</header>
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="learning-map.html">Learning Map</a>
+  <a href="teacher-notes.html">Teacher Notes</a>
+  <a href="level0.html">Start Level 0</a>
+  <a href="https://mrevanscomputing.github.io/pythonladder/index.html">Main Ladder</a>
+</nav>
+<main class="wrap">
+
+<div class="page-turn"><a class="button secondary" href="level6.html">← Previous level</a><a class="button secondary" href="learning-map.html">Learning Map</a><a class="button" href="level8.html">Next level →</a></div>
+<section class="notice">
+  <div class="level-top">
+    <div>
+      <span class="badge purple">Level 7</span>
+      <h2>Loops: stop repeating yourself</h2>
+      <p class="small">for loops · lists · iteration</p>
+    </div>
+    <span class="badge yellow">Main ladder prep: Improved Quiz with Repetition</span>
+  </div>
+</section>
+<div class="grid two">
+  <section class="card">
+    <h2>What you are learning</h2>
+    <ol class="step-list"><li>A loop repeats code.</li><li>A list stores several values together.</li><li>A for loop goes through each item in the list one at a time.</li></ol>
+  </section>
+  <section class="explain">
+    <h2>Why this matters</h2>
+    <p>Loops reduce repeated code. Instead of writing three separate print lines, one loop can process every item in a list.</p>
+  </section>
+</div>
+<section class="card">
+  <h2>Worked example</h2>
+  <p>Read the code first. Then predict the output before you run it.</p>
+  <button class="copy-btn" data-copy="code7">Copy code</button><pre id="code7"><code>subjects = [&quot;IT&quot;, &quot;Maths&quot;, &quot;Science&quot;]
+
+for subject in subjects:
+    print(&quot;I study&quot;, subject)</code></pre>
+</section>
+<section class="card">
+  <h2>Line-by-line explanation</h2>
+  <table><thead><tr><th>Part of the code</th><th>Why it is there</th></tr></thead><tbody><tr><td><code>subjects = [...]</code></td><td>Creates a list with three values.</td></tr><tr><td><code>for subject in subjects:</code></td><td>Takes one item from the list each time the loop repeats.</td></tr><tr><td><code>indented print line</code></td><td>This line repeats once for each item.</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>Fill-the-gap practice</h2>
+  <p>Fill the gaps to complete the loop.</p>
+  <div class="wordbank" aria-label="Word bank"><span>for</span><span>in</span><span>:</span><span>print</span><span>subject</span></div>
+  <div id="blank7"><div class="blank-row"><code>subjects = ["IT", "Maths", "Science"]</code></div><div class="blank-row"><code><input data-answer="for"> <input data-answer="subject"> <input data-answer="in"> subjects<input data-answer=":"></code></div><div class="blank-row"><code>    <input data-answer="print">("I study", subject)</code></div></div>
+  <button class="check-btn" data-check-blanks="blank7">Check gaps</button>
+  <div class="feedback" id="blank7-feedback" aria-live="polite"></div>
+</section>
+<div class="grid two">
+  <section class="greenbox">
+    <h2>Your tiny build</h2>
+    <ol><li>Create a list of three favourite games, subjects or sports.</li><li>Use a for loop to print each one.</li><li>Add a sentence before each item.</li></ol>
+  </section>
+  <section class="bluebox">
+    <h2>Bridge to the main ladder</h2>
+    <p>This prepares students for the main ladder Level 6 Improved Quiz with Repetition.</p>
+    <div class="btn-row"><a class="button secondary" href="https://mrevanscomputing.github.io/pythonladder/index.html">Open main Python ladder</a></div>
+  </section>
+</div>
+<div class="page-turn"><a class="button secondary" href="level6.html">← Previous level</a><a class="button secondary" href="index.html">Home</a><a class="button" href="level8.html">Next level →</a></div>
+
+</main>
+<footer class="footer">Python Builder Ladder · build skills one step at a time.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 9: Mini app: one menu, two choices</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <img class="logo" src="assets/python-logo.svg" alt="Python logo style icon">
+    <div>
+      <p class="kicker">Python Builder Ladder</p>
+      <h1>Level 9: Mini app: one menu, two choices</h1>
+      <p>menu · while loop · selection · combined skills</p>
+    </div>
+  </div>
+</header>
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="learning-map.html">Learning Map</a>
+  <a href="teacher-notes.html">Teacher Notes</a>
+  <a href="level0.html">Start Level 0</a>
+  <a href="https://mrevanscomputing.github.io/pythonladder/index.html">Main Ladder</a>
+</nav>
+<main class="wrap">
+
+<div class="page-turn"><a class="button secondary" href="level8.html">← Previous level</a><a class="button secondary" href="learning-map.html">Learning Map</a><a class="button" href="teacher-notes.html">Teacher notes →</a></div>
+<section class="notice">
+  <div class="level-top">
+    <div>
+      <span class="badge green">Level 9</span>
+      <h2>Mini app: one menu, two choices</h2>
+      <p class="small">menu · while loop · selection · combined skills</p>
+    </div>
+    <span class="badge yellow">Main ladder prep: Full Student Helper App</span>
+  </div>
+</section>
+<div class="grid two">
+  <section class="card">
+    <h2>What you are learning</h2>
+    <ol class="step-list"><li>A menu gives the user choices.</li><li>A while loop keeps the menu running until the user chooses to stop.</li><li>Selection decides what happens for each menu option.</li><li>A bigger program is just smaller skills combined carefully.</li></ol>
+  </section>
+  <section class="explain">
+    <h2>Why this matters</h2>
+    <p>The final main ladder task can feel huge. A menu app becomes manageable when learners see it as input, selection, loops and print statements working together.</p>
+  </section>
+</div>
+<section class="card">
+  <h2>Worked example</h2>
+  <p>Read the code first. Then predict the output before you run it.</p>
+  <button class="copy-btn" data-copy="code9">Copy code</button><pre id="code9"><code>choice = &quot;&quot;
+
+while choice != &quot;3&quot;:
+    print(&quot;1. Say hello&quot;)
+    print(&quot;2. Show help&quot;)
+    print(&quot;3. Exit&quot;)
+    choice = input(&quot;Choose: &quot;)
+
+    if choice == &quot;1&quot;:
+        print(&quot;Hello&quot;)
+    elif choice == &quot;2&quot;:
+        print(&quot;Ask for help if you are stuck&quot;)
+
+print(&quot;Goodbye&quot;)</code></pre>
+</section>
+<section class="card">
+  <h2>Line-by-line explanation</h2>
+  <table><thead><tr><th>Part of the code</th><th>Why it is there</th></tr></thead><tbody><tr><td><code>choice = &quot;&quot;</code></td><td>Creates the variable before the loop starts.</td></tr><tr><td><code>while choice != &quot;3&quot;:</code></td><td>Keeps repeating until the user chooses option 3.</td></tr><tr><td><code>if / elif</code></td><td>Checks which menu option the user typed.</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>Fill-the-gap practice</h2>
+  <p>Complete the tiny menu app.</p>
+  <div class="wordbank" aria-label="Word bank"><span>while</span><span>input</span><span>if</span><span>elif</span><span>print</span></div>
+  <div id="blank9"><div class="blank-row"><code>choice = ""</code></div><div class="blank-row"><code><input data-answer="while"> choice != "3":</code></div><div class="blank-row"><code>    print("1. Say hello")</code></div><div class="blank-row"><code>    print("2. Show help")</code></div><div class="blank-row"><code>    print("3. Exit")</code></div><div class="blank-row"><code>    choice = <input data-answer="input">("Choose: ")</code></div><div class="blank-row"><code>    <input data-answer="if"> choice == "1":</code></div><div class="blank-row"><code>        <input data-answer="print">("Hello")</code></div><div class="blank-row"><code>    <input data-answer="elif"> choice == "2":</code></div><div class="blank-row"><code>        print("Keep going")</code></div></div>
+  <button class="check-btn" data-check-blanks="blank9">Check gaps</button>
+  <div class="feedback" id="blank9-feedback" aria-live="polite"></div>
+</section>
+<div class="grid two">
+  <section class="greenbox">
+    <h2>Your tiny build</h2>
+    <ol><li>Create a menu with two useful choices and one exit choice.</li><li>Use a while loop so the menu repeats.</li><li>Use if / elif to respond to each choice.</li></ol>
+  </section>
+  <section class="bluebox">
+    <h2>Bridge to the main ladder</h2>
+    <p>This prepares students for the main ladder Level 10 Full Student Helper App.</p>
+    <div class="btn-row"><a class="button secondary" href="https://mrevanscomputing.github.io/pythonladder/index.html">Open main Python ladder</a></div>
+  </section>
+</div>
+<div class="page-turn"><a class="button secondary" href="level8.html">← Previous level</a><a class="button secondary" href="index.html">Home</a><a class="button" href="teacher-notes.html">Teacher notes →</a></div>
+
+</main>
+<footer class="footer">Python Builder Ladder · build skills one step at a time.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

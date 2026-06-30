@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 4: Selection: making a decision</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <img class="logo" src="assets/python-logo.svg" alt="Python logo style icon">
+    <div>
+      <p class="kicker">Python Builder Ladder</p>
+      <h1>Level 4: Selection: making a decision</h1>
+      <p>if · else · comparison · indentation · len</p>
+    </div>
+  </div>
+</header>
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="learning-map.html">Learning Map</a>
+  <a href="teacher-notes.html">Teacher Notes</a>
+  <a href="level0.html">Start Level 0</a>
+  <a href="https://mrevanscomputing.github.io/pythonladder/index.html">Main Ladder</a>
+</nav>
+<main class="wrap">
+
+<div class="page-turn"><a class="button secondary" href="level3.html">← Previous level</a><a class="button secondary" href="learning-map.html">Learning Map</a><a class="button" href="level5.html">Next level →</a></div>
+<section class="notice">
+  <div class="level-top">
+    <div>
+      <span class="badge pink">Level 4</span>
+      <h2>Selection: making a decision</h2>
+      <p class="small">if · else · comparison · indentation · len</p>
+    </div>
+    <span class="badge yellow">Main ladder prep: Password Strength Checker</span>
+  </div>
+</section>
+<div class="grid two">
+  <section class="card">
+    <h2>What you are learning</h2>
+    <ol class="step-list"><li>Selection lets the program choose between two paths.</li><li>if checks whether a condition is True.</li><li>else runs when the condition is False.</li><li>Indented lines belong inside the if or else block.</li></ol>
+  </section>
+  <section class="explain">
+    <h2>Why this matters</h2>
+    <p>A password checker needs a decision. The program must choose whether the password is long enough or too short.</p>
+  </section>
+</div>
+<section class="card">
+  <h2>Worked example</h2>
+  <p>Read the code first. Then predict the output before you run it.</p>
+  <button class="copy-btn" data-copy="code4">Copy code</button><pre id="code4"><code>password = input(&quot;Enter a password: &quot;)
+
+if len(password) &gt;= 8:
+    print(&quot;Strong enough&quot;)
+else:
+    print(&quot;Too short&quot;)</code></pre>
+</section>
+<section class="card">
+  <h2>Line-by-line explanation</h2>
+  <table><thead><tr><th>Part of the code</th><th>Why it is there</th></tr></thead><tbody><tr><td><code>len(password)</code></td><td>Counts how many characters are in the password.</td></tr><tr><td><code>&gt;= 8</code></td><td>Checks whether the length is 8 or more.</td></tr><tr><td><code>indented print lines</code></td><td>These lines only run inside the matching branch.</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>Drag-and-drop practice</h2>
+  <p>Put the password checker in the best order.</p>
+  <div class="drag-area" id="drag4" data-order="a,b,c,d,e">
+    <div class="drag-card" tabindex="0" data-id="a"><code>password = input(&quot;Enter a password: &quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="b"><code>if len(password) &gt;= 8:</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="c"><code>    print(&quot;Strong enough&quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="d"><code>else:</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="e"><code>    print(&quot;Too short&quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div>
+  </div>
+  <button class="check-btn" data-check-drag="drag4">Check order</button>
+  <button class="reset-btn" data-reset-drag="drag4">Shuffle cards</button>
+  <div class="feedback" id="drag4-feedback" aria-live="polite"></div>
+</section>
+<div class="grid two">
+  <section class="greenbox">
+    <h2>Your tiny build</h2>
+    <ol><li>Ask the user to enter a password.</li><li>Use len() to check if it has at least 8 characters.</li><li>Print one message for strong enough and one message for too short.</li></ol>
+  </section>
+  <section class="bluebox">
+    <h2>Bridge to the main ladder</h2>
+    <p>This prepares students for the main ladder Level 3 Password Strength Checker.</p>
+    <div class="btn-row"><a class="button secondary" href="https://mrevanscomputing.github.io/pythonladder/index.html">Open main Python ladder</a></div>
+  </section>
+</div>
+<div class="page-turn"><a class="button secondary" href="level3.html">← Previous level</a><a class="button secondary" href="index.html">Home</a><a class="button" href="level5.html">Next level →</a></div>
+
+</main>
+<footer class="footer">Python Builder Ladder · build skills one step at a time.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

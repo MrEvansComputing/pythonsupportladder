@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 6: Score counters: changing a variable</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <img class="logo" src="assets/python-logo.svg" alt="Python logo style icon">
+    <div>
+      <p class="kicker">Python Builder Ladder</p>
+      <h1>Level 6: Score counters: changing a variable</h1>
+      <p>selection · score variable · updating values</p>
+    </div>
+  </div>
+</header>
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="learning-map.html">Learning Map</a>
+  <a href="teacher-notes.html">Teacher Notes</a>
+  <a href="level0.html">Start Level 0</a>
+  <a href="https://mrevanscomputing.github.io/pythonladder/index.html">Main Ladder</a>
+</nav>
+<main class="wrap">
+
+<div class="page-turn"><a class="button secondary" href="level5.html">← Previous level</a><a class="button secondary" href="learning-map.html">Learning Map</a><a class="button" href="level7.html">Next level →</a></div>
+<section class="notice">
+  <div class="level-top">
+    <div>
+      <span class="badge red">Level 6</span>
+      <h2>Score counters: changing a variable</h2>
+      <p class="small">selection · score variable · updating values</p>
+    </div>
+    <span class="badge yellow">Main ladder prep: Mini Quiz Game</span>
+  </div>
+</section>
+<div class="grid two">
+  <section class="card">
+    <h2>What you are learning</h2>
+    <ol class="step-list"><li>A score starts at 0.</li><li>When an answer is correct, the score can increase.</li><li>score = score + 1 means take the old score and add one.</li></ol>
+  </section>
+  <section class="explain">
+    <h2>Why this matters</h2>
+    <p>Many students think score = score + 1 looks mathematically wrong. In programming, the right side is calculated first, then the answer is stored back into the variable.</p>
+  </section>
+</div>
+<section class="card">
+  <h2>Worked example</h2>
+  <p>Read the code first. Then predict the output before you run it.</p>
+  <button class="copy-btn" data-copy="code6">Copy code</button><pre id="code6"><code>score = 0
+answer = input(&quot;What language are we learning? &quot;)
+
+if answer.lower() == &quot;python&quot;:
+    score = score + 1
+    print(&quot;Correct&quot;)
+else:
+    print(&quot;Try again&quot;)
+
+print(&quot;Score:&quot;, score)</code></pre>
+</section>
+<section class="card">
+  <h2>Line-by-line explanation</h2>
+  <table><thead><tr><th>Part of the code</th><th>Why it is there</th></tr></thead><tbody><tr><td><code>score = 0</code></td><td>Creates the score variable at the start.</td></tr><tr><td><code>answer.lower() == &quot;python&quot;</code></td><td>Checks the answer while ignoring capital letters.</td></tr><tr><td><code>score = score + 1</code></td><td>Updates the score by adding one.</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>Drag-and-drop practice</h2>
+  <p>Put the one-question quiz in the correct order.</p>
+  <div class="drag-area" id="drag6" data-order="a,b,c,d,e">
+    <div class="drag-card" tabindex="0" data-id="a"><code>score = 0</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="b"><code>answer = input(&quot;What language are we learning? &quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="c"><code>if answer.lower() == &quot;python&quot;:</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="d"><code>    score = score + 1</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="e"><code>print(&quot;Score:&quot;, score)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div>
+  </div>
+  <button class="check-btn" data-check-drag="drag6">Check order</button>
+  <button class="reset-btn" data-reset-drag="drag6">Shuffle cards</button>
+  <div class="feedback" id="drag6-feedback" aria-live="polite"></div>
+</section>
+<div class="grid two">
+  <section class="greenbox">
+    <h2>Your tiny build</h2>
+    <ol><li>Create a score variable.</li><li>Ask one quiz question.</li><li>If the answer is correct, add 1 to the score.</li><li>Print the final score.</li></ol>
+  </section>
+  <section class="bluebox">
+    <h2>Bridge to the main ladder</h2>
+    <p>This prepares students for the main ladder Level 5 Mini Quiz Game.</p>
+    <div class="btn-row"><a class="button secondary" href="https://mrevanscomputing.github.io/pythonladder/index.html">Open main Python ladder</a></div>
+  </section>
+</div>
+<div class="page-turn"><a class="button secondary" href="level5.html">← Previous level</a><a class="button secondary" href="index.html">Home</a><a class="button" href="level7.html">Next level →</a></div>
+
+</main>
+<footer class="footer">Python Builder Ladder · build skills one step at a time.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

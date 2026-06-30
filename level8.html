@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 8: Files: saving and reading simple data</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <img class="logo" src="assets/python-logo.svg" alt="Python logo style icon">
+    <div>
+      <p class="kicker">Python Builder Ladder</p>
+      <h1>Level 8: Files: saving and reading simple data</h1>
+      <p>open · write · append · read · close</p>
+    </div>
+  </div>
+</header>
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="learning-map.html">Learning Map</a>
+  <a href="teacher-notes.html">Teacher Notes</a>
+  <a href="level0.html">Start Level 0</a>
+  <a href="https://mrevanscomputing.github.io/pythonladder/index.html">Main Ladder</a>
+</nav>
+<main class="wrap">
+
+<div class="page-turn"><a class="button secondary" href="level7.html">← Previous level</a><a class="button secondary" href="learning-map.html">Learning Map</a><a class="button" href="level9.html">Next level →</a></div>
+<section class="notice">
+  <div class="level-top">
+    <div>
+      <span class="badge amber">Level 8</span>
+      <h2>Files: saving and reading simple data</h2>
+      <p class="small">open · write · append · read · close</p>
+    </div>
+    <span class="badge yellow">Main ladder prep: Save, View and Search Scores</span>
+  </div>
+</section>
+<div class="grid two">
+  <section class="card">
+    <h2>What you are learning</h2>
+    <ol class="step-list"><li>A file lets data stay after the program ends.</li><li>Append mode &quot;a&quot; adds to the end of a file.</li><li>A newline character 
+ moves the next score onto a new line.</li><li>Using with open(...) automatically closes the file afterwards.</li></ol>
+  </section>
+  <section class="explain">
+    <h2>Why this matters</h2>
+    <p>File handling feels harder because the program is working with something outside the screen. Start with one simple save before moving to reading and searching.</p>
+  </section>
+</div>
+<section class="card">
+  <h2>Worked example</h2>
+  <p>Read the code first. Then predict the output before you run it.</p>
+  <button class="copy-btn" data-copy="code8">Copy code</button><pre id="code8"><code>name = input(&quot;Name: &quot;)
+score = input(&quot;Score: &quot;)
+
+with open(&quot;scores.txt&quot;, &quot;a&quot;) as file:
+    file.write(name + &quot;,&quot; + score + &quot;\n&quot;)
+
+print(&quot;Score saved&quot;)</code></pre>
+</section>
+<section class="card">
+  <h2>Line-by-line explanation</h2>
+  <table><thead><tr><th>Part of the code</th><th>Why it is there</th></tr></thead><tbody><tr><td><code>open(&quot;scores.txt&quot;, &quot;a&quot;)</code></td><td>Opens the file in append mode.</td></tr><tr><td><code>as file</code></td><td>Gives the open file a temporary name.</td></tr><tr><td><code>&quot;\n&quot;</code></td><td>Starts a new line so the next score is not stuck on the same line.</td></tr></tbody></table>
+</section>
+<section class="card">
+  <h2>Drag-and-drop practice</h2>
+  <p>Put the save-score program in the best order.</p>
+  <div class="drag-area" id="drag8" data-order="a,b,c,d,e">
+    <div class="drag-card" tabindex="0" data-id="a"><code>name = input(&quot;Name: &quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="b"><code>score = input(&quot;Score: &quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="c"><code>with open(&quot;scores.txt&quot;, &quot;a&quot;) as file:</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="d"><code>    file.write(name + &quot;,&quot; + score + &quot;\n&quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div><div class="drag-card" tabindex="0" data-id="e"><code>print(&quot;Score saved&quot;)</code><span class="card-buttons"><button class="mini-btn" data-move="up" aria-label="Move up">↑</button><button class="mini-btn" data-move="down" aria-label="Move down">↓</button></span></div>
+  </div>
+  <button class="check-btn" data-check-drag="drag8">Check order</button>
+  <button class="reset-btn" data-reset-drag="drag8">Shuffle cards</button>
+  <div class="feedback" id="drag8-feedback" aria-live="polite"></div>
+</section>
+<div class="grid two">
+  <section class="greenbox">
+    <h2>Your tiny build</h2>
+    <ol><li>Ask for a name and a score.</li><li>Append the data to scores.txt.</li><li>Run it twice and check the file has two lines.</li></ol>
+  </section>
+  <section class="bluebox">
+    <h2>Bridge to the main ladder</h2>
+    <p>This prepares students for the main ladder Levels 7, 8 and 9 on file handling.</p>
+    <div class="btn-row"><a class="button secondary" href="https://mrevanscomputing.github.io/pythonladder/index.html">Open main Python ladder</a></div>
+  </section>
+</div>
+<div class="page-turn"><a class="button secondary" href="level7.html">← Previous level</a><a class="button secondary" href="index.html">Home</a><a class="button" href="level9.html">Next level →</a></div>
+
+</main>
+<footer class="footer">Python Builder Ladder · build skills one step at a time.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
